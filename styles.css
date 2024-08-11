@@ -1,0 +1,217 @@
+/* Basic Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and overall styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f4f4f9; /* Soft gray background */
+    background-image: url('images/texture.png'); /* Optional: add a subtle texture */
+    line-height: 1.6;
+    padding-top: 100px; /* Adjusted to account for fixed header */
+}
+
+header {
+    background-color: #ffffff; /* Crisp white for clarity */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;}
+    
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5a5a5a; /* Subdued text color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+nav a:hover {
+    color: #000000; /* Dark color for contrast on hover */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Promo section */
+.promo {
+    margin-top: 60px;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    text-align: center;
+}
+
+/* Product grid */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    flex: 0 1 32%; /* Three products per row */
+    margin: 10px;
+    background-color: #fff; /* White background for products */
+    border: 1px solid #ddd; /* Subtle border */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for 3D effect */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product img {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.price {
+    color: #27ae60; /* Stylish green for price */
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+button {
+    background-color: #27ae60; /* Matching green for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #219150; /* Darker green on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        position: absolute;
+        background-color: #ffffff;
+        top: 60px;
+        left: 0;
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .product {
+        flex: 0 1 100%; /* Full width on smaller screens */
+    }
+}
+
+
+footer {
+    background-color: #94969f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #f8f8f8;
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive styling for footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#search-form {
+    margin-left: 20px;
+}
+
+#search-input {
+    padding: 8px;
+    margin-right: 4px;
+}
+
+#search-form button {
+    padding: 8px 10px;
+    background-color: #5a5a5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #333;
+}
+
